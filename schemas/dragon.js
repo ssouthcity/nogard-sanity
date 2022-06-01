@@ -11,19 +11,19 @@ export default {
         {
             name: 'elements',
             type: 'array',
-            of: [{ type: 'relation', to: [{ type: 'element' }] }],
+            of: [{ type: 'reference', to: [{ type: 'element' }] }],
             title: 'Elements',
         },
         {
             name: 'breeding_elements',
             type: 'array',
-            of: [{ type: 'relation', to: [{ type: 'element' }] }],
+            of: [{ type: 'reference', to: [{ type: 'element' }] }],
             title: 'Breeding Elements',
         },
         {
             name: 'breeding_requirement',
             type: 'array',
-            of: [{ type: 'relation', to: [{ type: 'element' }, { type: 'dragon' }] }],
+            of: [{ type: 'reference', to: [{ type: 'element' }, { type: 'dragon' }] }],
             title: 'Breeding Requirement',
         },
     ],
