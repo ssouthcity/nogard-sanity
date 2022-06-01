@@ -11,7 +11,7 @@ export default {
         {
             name: 'habitats',
             type: 'array',
-            of: [{ type: 'element' }],
+            of: [{ type: 'reference', to: [{ type: 'element' }] }],
             title: 'Habitats',
         },
         {
