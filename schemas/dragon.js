@@ -9,16 +9,16 @@ export default {
             title: 'Name',
         },
         {
+            name: 'habitats',
+            type: 'array',
+            of: [{ type: 'element' }],
+            title: 'Habitats',
+        },
+        {
             name: 'elements',
             type: 'array',
             of: [{ type: 'reference', to: [{ type: 'element' }] }],
             title: 'Elements',
-        },
-        {
-            name: 'breeding_elements',
-            type: 'array',
-            of: [{ type: 'reference', to: [{ type: 'element' }] }],
-            title: 'Breeding Elements',
         },
         {
             name: 'breeding_requirement',
