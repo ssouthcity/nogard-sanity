@@ -15,10 +15,15 @@ export default {
             title: 'Habitats',
         },
         {
+            name: 'incubation_time',
+            type: 'number',
+            title: 'Incubation Time (seconds)',
+        },
+        {
             name: 'elements',
             type: 'array',
             of: [{ type: 'reference', to: [{ type: 'element' }] }],
-            title: 'Elements',
+            title: 'Primary Elements When Breeding',
         },
         {
             name: 'breeding_requirement',
